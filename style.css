@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+
+body {
+  background: #000;
+  color: #f5e9dc;
+  font-family: 'Cinzel Decorative', serif;
+  margin: 0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #e0c080;
+  text-shadow: 0 0 6px #b29563;
+  margin-bottom: 20px;
+}
+
+.bounce {
+  animation: bounce 3s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.tarot-input {
+  background: #1a1a1a;
+  border: 1px solid #555;
+  color: #f5e9dc;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: 300px;
+  margin: 10px auto 20px auto;
+  display: block;
+}
+
+.question {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tarot-button {
+  background: #1a1a1a;
+  border: 1px solid #555;
+  color: #f5e9dc;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-family: inherit;
+  margin: 10px 5px;
+  transition: all 0.3s ease;
+}
+
+.tarot-button:hover {
+  background: #333;
+  border-color: #e0c080;
+  box-shadow: 0 0 12px rgba(255, 215, 160, 0.4);
+  cursor: pointer;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card-container {
+  background: #111;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #222;
+  width: 220px;
+  transition: box-shadow 0.4s ease;
+}
+
+.card-container:hover {
+  box-shadow: 0 0 16px #e0c080, 0 0 20px rgba(255, 255, 200, 0.1);
+}
+
+.card-title {
+  color: #f5e9dc;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.card-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #e0caa8;
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .results {
+    flex-direction: column;
+    align-items: center;
+  }
+}
